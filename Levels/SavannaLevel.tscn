@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://GroundTiles/SavannaGround/savanna_tileset.tres" type="TileSet" id=1]
+[ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scripts/Level.gd" type="Script" id=3]
+
+[node name="SavannaLevel" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 96, 96 )
+collision_mask = 2
+format = 1
+tile_data = PoolIntArray( -196593, 6, 0, 65532, 6, 0, 65533, 6, 0, 65534, 6, 0, 65535, 6, 0, 0, 6, 0, 1, 6, 0, 2, 6, 0, 3, 6, 0, 4, 6, 0, 5, 6, 0, 6, 6, 0, 7, 6, 0, 8, 6, 0, 9, 6, 0, 10, 6, 0, 131070, 3, 0, 131071, 3, 0, 65536, 3, 0, 65537, 3, 0, 65538, 3, 0, 65539, 3, 0, 65540, 3, 0 )
+
+[node name="Mursu" parent="." instance=ExtResource( 2 )]
+
+[node name="Viewport" type="Viewport" parent="."]
+size = Vector2( 10, 8 )
+
+[node name="Start" type="Position2D" parent="."]
+position = Vector2( -340, -47 )
