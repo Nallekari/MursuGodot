@@ -37,12 +37,12 @@ animations = [ {
 "speed": 15.0
 } ]
 
-[node name="Mursu" type="KinematicBody2D"]
+[node name="Mursu" type="KinematicBody2D" groups=["Player"]]
 position = Vector2( -278, -425 )
 collision_layer = 2
 script = ExtResource( 2 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["Player"]]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -3.5, 9 )
 shape = SubResource( 1 )
 

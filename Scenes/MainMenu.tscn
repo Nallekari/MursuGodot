@@ -35,7 +35,6 @@ custom_fonts/font = SubResource( 1 )
 text = "MURSUPELI"
 align = 1
 valign = 1
-percent_visible = -0.111111
 
 [node name="Play" type="Button" parent="."]
 anchor_left = 0.5
