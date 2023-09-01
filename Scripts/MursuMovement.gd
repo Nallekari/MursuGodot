@@ -7,7 +7,6 @@ export var velocity = Vector2(0,0)
 export var speed = 400
 export var jump_force = 500
 
-
 export var gravity = 800
 
 var active = true

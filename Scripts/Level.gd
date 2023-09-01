@@ -31,8 +31,12 @@ func _on_checkpoint_touched_player(position):
 	
 
 func _on_DeathSpike_body_entered(body):
-	respawn_player()
+	if body.is_in_group("Player"):
+		respawn_player()
 
 func respawn_player():
+	player.active = false
 	player.velocity = Vector2.ZERO
+	yield(get_tree().create_timer(3), "timeout")
 	player.global_position = last_checkpoint
+	player.active = true
