@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://GroundTiles/SavannaGround/GrndLeftTop.png" type="Texture" id=1]
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( -416, 803, -420, 1007, -417, 1207, -735, 1217, -1193, 1169, -1002, 1164, -882, 1145, -773, 1096, -651, 985, -582, 864, -522, 825, -473, 803 )
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+texture = ExtResource( 1 )
+polygon = PoolVector2Array( -416, 803, -420, 1007, -417, 1207, -735, 1217, -1193, 1169, -1002, 1164, -882, 1145, -773, 1096, -651, 985, -582, 864, -522, 825, -473, 803 )

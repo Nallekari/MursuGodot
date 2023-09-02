@@ -38,7 +38,7 @@ animations = [ {
 } ]
 
 [node name="Mursu" type="KinematicBody2D" groups=["Player"]]
-position = Vector2( -278, -425 )
+position = Vector2( -28, -13 )
 collision_layer = 2
 script = ExtResource( 2 )
 
@@ -52,3 +52,9 @@ current = true
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 2 )
 animation = "Default"
+
+[node name="FrontSensor" type="Position2D" parent="."]
+position = Vector2( 40, 49 )
+
+[node name="BackSensor" type="Position2D" parent="."]
+position = Vector2( -47, 49 )

@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=18 format=2]
+[gd_resource type="TileSet" load_steps=19 format=2]
 
 [ext_resource path="res://GroundTiles/SavannaGround/GrndTopRight.png" type="Texture" id=1]
 [ext_resource path="res://GroundTiles/SavannaGround/SavannahGrassGrndRight.png" type="Texture" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://GroundTiles/SavannaGround/GrndTopBot.png" type="Texture" id=6]
 [ext_resource path="res://GroundTiles/SavannaGround/GrndLeftRight.png" type="Texture" id=7]
 [ext_resource path="res://GroundTiles/SavannaGround/SavannahGrassGround.png" type="Texture" id=8]
+[ext_resource path="res://GroundTiles/DesertGround/tileset_sequel.png" type="Texture" id=9]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
@@ -226,3 +227,45 @@ points = PoolVector2Array( 96, 96, 0, 96, 0, 0, 96, 0 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 8/z_index = 0
+9/name = "tileset_sequel.png 9"
+9/texture = ExtResource( 9 )
+9/tex_offset = Vector2( 0, 0 )
+9/modulate = Color( 1, 1, 1, 1 )
+9/region = Rect2( 0, 0, 32, 32 )
+9/tile_mode = 0
+9/occluder_offset = Vector2( 0, 0 )
+9/navigation_offset = Vector2( 0, 0 )
+9/shape_offset = Vector2( 0, 0 )
+9/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+9/shape_one_way = false
+9/shape_one_way_margin = 0.0
+9/shapes = [  ]
+9/z_index = 0
+10/name = "tileset_sequel.png 10"
+10/texture = ExtResource( 9 )
+10/tex_offset = Vector2( 0, 0 )
+10/modulate = Color( 1, 1, 1, 1 )
+10/region = Rect2( 0, 0, 32, 32 )
+10/tile_mode = 0
+10/occluder_offset = Vector2( 0, 0 )
+10/navigation_offset = Vector2( 0, 0 )
+10/shape_offset = Vector2( 0, 0 )
+10/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+10/shape_one_way = false
+10/shape_one_way_margin = 0.0
+10/shapes = [  ]
+10/z_index = 0
+11/name = "tileset_sequel.png 11"
+11/texture = ExtResource( 9 )
+11/tex_offset = Vector2( 0, 0 )
+11/modulate = Color( 1, 1, 1, 1 )
+11/region = Rect2( 0, 0, 32, 32 )
+11/tile_mode = 0
+11/occluder_offset = Vector2( 0, 0 )
+11/navigation_offset = Vector2( 0, 0 )
+11/shape_offset = Vector2( 0, 0 )
+11/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+11/shape_one_way = false
+11/shape_one_way_margin = 0.0
+11/shapes = [  ]
+11/z_index = 0
