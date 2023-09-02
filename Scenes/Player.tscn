@@ -54,7 +54,7 @@ frames = SubResource( 2 )
 animation = "Default"
 
 [node name="FrontSensor" type="Position2D" parent="."]
-position = Vector2( 40, 49 )
+position = Vector2( 20, 55 )
 
 [node name="BackSensor" type="Position2D" parent="."]
-position = Vector2( -47, 49 )
+position = Vector2( 18, 55 )

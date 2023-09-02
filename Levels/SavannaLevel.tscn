@@ -49,6 +49,10 @@ position = Vector2( 3224, 767 )
 
 [node name="Slope" parent="." instance=ExtResource( 7 )]
 
+[node name="SlopeReverse" parent="." instance=ExtResource( 7 )]
+position = Vector2( -2291, 0 )
+scale = Vector2( -1, 1 )
+
 [connection signal="body_entered" from="DeathSpike" to="." method="_on_DeathSpike_body_entered"]
 [connection signal="body_entered" from="DeathSpike2" to="." method="_on_DeathSpike_body_entered"]
 [connection signal="body_entered" from="DeathSpike3" to="." method="_on_DeathSpike_body_entered"]
