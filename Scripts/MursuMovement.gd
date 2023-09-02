@@ -54,17 +54,20 @@ func movement(direction):
 
 func slide():
 	var space_state = get_world_2d().direct_space_state	
-	var result1 = space_state.intersect_ray(front_sensor.global_position, front_sensor.global_position + Vector2(0,200), [self], collision_mask)
-	var result2 = space_state.intersect_ray(back_sensor.global_position, back_sensor.global_position + Vector2(0,200), [self], collision_mask)	
-	if  (result1.position.y-result2.position.y) > 0 or (result1.position.y-result2.position.y) < 0 :
+	var front_sensor_feed = space_state.intersect_ray(front_sensor.global_position, front_sensor.global_position + Vector2(0,200), [self], collision_mask)
+	var back_sensor_feed = space_state.intersect_ray(back_sensor.global_position, back_sensor.global_position + Vector2(0,200), [self], collision_mask)	
+	if  front_sensor_feed && back_sensor_feed:
 		#gravity = 8000
 		print("sliding")		
-
+		if (front_sensor_feed.position.y - back_sensor_feed.position.y) > 0:			
+			velocity = Vector2(-speed, (front_sensor_feed.position.y - back_sensor_feed.position.y)+gravity)
+			print(str(speed) + "   " + str((front_sensor_feed.position.y - back_sensor_feed.position.y)+gravity))
+		elif (front_sensor_feed.position.y-back_sensor_feed.position.y) < 0 :
+			velocity = Vector2(speed, front_sensor_feed.position.y - back_sensor_feed.position.y + gravity)
 		#if result1 && result2:
 		#	print("frontsensor "+ str(result1.position))
 		#	print("backsensor "+ str(result2.position))
-		print(result1.position.y-result2.position.y)
-		velocity = Vector2(result1.position.x-result2.position.x, result1.position.y-result2.position.y)
+
 		
 		
 func update_animations(direction):
