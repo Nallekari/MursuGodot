@@ -18,11 +18,17 @@ var active = true
 
 func _physics_process(delta):
 	
-	velocity = move_and_slide(velocity, Vector2.UP)
+	velocity = move_and_slide(velocity, Vector2.UP, true, 4, 1.4)
+	if Input.is_action_pressed("slide"):
+		velocity = move_and_slide(velocity, Vector2.UP,false)
+		
 	
 	velocity.y += delta * gravity
 	if velocity.y > 1000:
 		velocity.y = 1000
+	if is_on_floor():
+		velocity.y = 0	
+		
 	var direction = 0
 	
 	
